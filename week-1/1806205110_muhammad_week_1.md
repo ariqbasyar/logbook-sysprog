@@ -23,7 +23,7 @@ Pemrograman sistem biasanya adalah pemrograman yang dapat berinteraksi langsung 
 | memiliki akses langsung ke memori | tidak memiliki akses langsung ke memori<br>(membutuhkan perizinan dari sistem APIs) |
 kode yang sehari - hari kita eksekusi adalah pada user mode.
 
-# Apa prbedaan program dengan process?
+# Apa perbedaan program dengan process?
 | Program | Process |
 | ------- | ------- |
 | terdiri dari kumpulan instruksi | adalah program yang berjalan(running) |
