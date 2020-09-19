@@ -49,6 +49,7 @@ file `/proc/cpuinfo` menyediakan informasi detail dari cpu yang tertanam pada su
 ## Informasi memori atau RAM
 file `/proc/meminfo` memiliki infomasi tentang memori dari memori total, free, cache, swap dan lain - lain. Saya ingin mencoba melihat memori untuk usage, cache dan swap nya menggunakan
 `grep -E 'Mem|Cache|Swap' /proc/meminfo`
+
 ![Hasil grep meminfo](/images/meminfo.png)
 
 ## Informasi tentang berapa lama system tersebut menyala?
@@ -72,6 +73,7 @@ Sebenarnya output nya sangat panjang, mungkin ini sudah cukup mewakili.
 
 ## Informasi partisi
 File `/proc/partitions` memberikan informasi yaitu  table yang berisi nomor major dan minor terhadap device untuk partisi, nomor - nomor itu bisa di mapping ke isi file `/proc/devices`.  Nah major number berfungsi untuk mapping di /proc/devices yaitu untuk melihat di device mana partisi itu berada. Nah kalau minor number itu adalah unique number untuk mengidentifikasi tiap - tiap device yang sama. Table ini sangat berhubungan dengan bagaimana kita membuat partisi untuk linux ini.
+
 ![Hasil cat /proc/partitions](/images/partitions.png)
 
 
