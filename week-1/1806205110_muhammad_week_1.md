@@ -80,8 +80,8 @@ File `/proc/partitions` memberikan informasi yaitu  table yang berisi nomor majo
 # Apa perbedaan relative path dan absolute path?
 Perbedaannya adalah, kalau relative path, maka relative terhadap dimana command tersebut dijalankan atau dimana user berada(dapat dilihat dengan command `pwd`) sedangkan absolute path, tidak melihat dimana command itu dijalankan, sebagai contoh:
 
-Ketika saya di folder home (~/), saya dapat mengakses ssh key saya yaitu misal .ssh/id_rsa tetapi beda kalau saya pindah folder misal sekarang di ~/Documents maka saya tidak bisa mengakses .ssh/id_rsa lagi karena tidak ada file .ssh/id_rsa di ~/Documents.
-Nah kalau absolute path, saya dapat mengakses rsa key saya yaitu dengan memberikan absolute path nya dan biasanya absolute path menggunakan root(/) atau home(~/) maka saya dapat mengakses rsa key saya dengan memberikan path ~/.ssh/id_rsa atau /home/username/.ssh/id_rsa.
+Ketika saya di folder home (\~/), saya dapat mengakses ssh key saya yaitu misal .ssh/id_rsa tetapi beda kalau saya pindah folder misal sekarang di \~/Documents maka saya tidak bisa mengakses .ssh/id_rsa lagi karena tidak ada file .ssh/id_rsa di \~/Documents.
+Nah kalau absolute path, saya dapat mengakses rsa key saya yaitu dengan memberikan absolute path nya dan biasanya absolute path menggunakan root(/) atau home(\~/) maka saya dapat mengakses rsa key saya dengan memberikan path \~/.ssh/id_rsa atau /home/username/.ssh/id_rsa.
 
 # Filesystem Hierarchy Standard
 Itulah nama standard yang mendefine struktur dari folder pada distribusi linux. Struktur ini merancang bahwa semua folder berada pada folder root (/) walau berada pada disk yang berbeda, struktur nya tetap sama. Contoh folder - folder yang default ada pada root adalah (/), (/boot), (/dev), (/proc), dan lain - lain bisa di lihat di sini https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard
