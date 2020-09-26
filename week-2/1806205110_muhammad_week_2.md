@@ -55,3 +55,11 @@ eksekusi system call di register atau stack pada kernel memory.
 
 ## Error handling
 ---
+System call memiliki definisi khusus untuk acuan dari kode error yang diberikan
+ketika gagal dalam pemanggilan system call. kita dapat mengtahui jenis error
+yang dihasilkan dengan bantuan program "errno" pada Unix.
+
+![errno.png](/images/errno.png)
+
+dan masih banyak lagi bisa di lihat di program errno tersebut atau di
+file [errno.h](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/errno.h.html)
