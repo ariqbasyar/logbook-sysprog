@@ -48,7 +48,7 @@ berkurangnya performa dari suatu program.
 Bahasa pemrograman high level sekarang sudah memiliki library yang bertugas
 untuk menjadi wrapper atau jembatan ketika ingin mengakses system call yang
 dimana wrapper function tersebut sudah di utilize agar bisa memanggil system
-call dengan programm atau process parent nya tetap berada pada user mode. 
+call dengan programm atau process parent nya tetap berada pada user mode.
 Program cukup menggunakan library untuk pemanggilan system call dan wrapper
 function akan meneruskan ke trap handler yang selanjutnya siap melakukan
 eksekusi system call di register atau stack pada kernel memory.
