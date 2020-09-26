@@ -31,3 +31,20 @@ menduplikasi pemanggilan process dari program tersebut
 pemanggilan process secara langsung
 - [kill](https://man7.org/linux/man-pages/man2/kill.2.html), untuk mengirim
 sinyal 'kematian' ke sebuah process atau process group
+
+# Wrapper function for system call
+## The problem
+Penggunaan system call tidak bisa semulus yang kita kira, masalah utama
+yang perlu diatasi adalah performa. Ya! performa suatu program akan berkurang
+karena program harus berpindah dari user mode ke kernel mode untuk bisa
+mengeksekusi system call yang dimana perpindahan ini dapat berakibat pada
+berkurangnya performa dari suatu program.
+
+## Solution
+Bahasa pemrograman high level sekarang sudah memiliki library yang bertugas
+untuk menjadi wrapper atau jembatan ketika ingin mengakses system call yang
+dimana wrapper function tersebut sudah di utilize agar bisa memanggil system
+call dengan programm atau process parent nya tetap berada pada user mode. 
+Program cukup menggunakan library untuk pemanggilan system call dan wrapper
+function akan meneruskan ke trap handler yang selanjutnya siap melakukan
+eksekusi system call di register atau stack pada kernel memory.
