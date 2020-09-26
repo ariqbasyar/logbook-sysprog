@@ -1,20 +1,17 @@
 # System Call
 
 ## Definition
----
 System call adalah sebuah cara bagaimana sebuah application program dapat
 berinteraksi hardware, dengan system call memberikan sebuah
 API agar dapat berinteraksi dengan hardware pada kernel space.
 
 ## Why?
----
 Mengapa kita membutuhkan system call? Agar program kita dapat melakukan task
 seperti pada program yang low level contohnya I/O atau berinteraksi dengan
 devices, networking, bahkan kita jadi bisa membuat file system sendiri dengan
 bantuan API dari system call.
 
 ## Example
----
 contoh system call yang sering digunakan:
 - [open](https://man7.org/linux/man-pages/man2/open.2.html), untuk membuka
 suatu file dengan spesifikasi sebuah pathname
@@ -36,7 +33,6 @@ pemanggilan process secara langsung
 sinyal 'kematian' ke sebuah process atau process group
 
 ## Wrapper function for system call
----
 ### The problem
 Penggunaan system call tidak bisa semulus yang kita kira, masalah utama
 yang perlu diatasi adalah performa. Ya! performa suatu program akan berkurang
@@ -54,7 +50,6 @@ function akan meneruskan ke trap handler yang selanjutnya siap melakukan
 eksekusi system call di register atau stack pada kernel memory.
 
 ## Error handling
----
 System call memiliki definisi khusus untuk acuan dari kode error yang diberikan
 ketika gagal dalam pemanggilan system call. kita dapat mengtahui jenis error
 yang dihasilkan dengan bantuan program "errno" pada Unix.
