@@ -24,3 +24,9 @@ sysctl kernel.pid_max
 
 Pada sistem 64bit, nilai ini bisa diperbesar lagi sampai 2<sup>22</sup> atau
 sekitar 4 juta dengan cara write **4194304** ke file **/proc/sys/kernel/pid_max**
+
+### When a process has a PID exceeding the maximum limit (pid_max)
+Dari sebuah *file* [**pid.c**](https://github.com/torvalds/linux/blob/master/kernel/pid.c) yang bertugas untuk mengontrol pid yang diberikan
+ke suatu *process* dengan cara menambahkan pid terakhir dengan 1, nah tapi
+kalau nilainya melebihi nilai maksimal maka akan diubah menjadi bernilai 300
+yaitu sebuah *variable* konstanta yang sudah di *define* di [sini](https://github.com/torvalds/linux/blob/c85fb28b6f999db9928b841f63f1beeb3074eeca/kernel/pid.c#L63).
