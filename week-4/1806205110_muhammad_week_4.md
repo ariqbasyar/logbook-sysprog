@@ -30,3 +30,8 @@ Dari sebuah *file* [**pid.c**](https://github.com/torvalds/linux/blob/master/ker
 ke suatu *process* dengan cara menambahkan pid terakhir dengan 1, nah tapi
 kalau nilainya melebihi nilai maksimal maka akan diubah menjadi bernilai 300
 yaitu sebuah *variable* konstanta yang sudah di *define* di [sini](https://github.com/torvalds/linux/blob/c85fb28b6f999db9928b841f63f1beeb3074eeca/kernel/pid.c#L63).
+
+Lalu mengapa tidak dikembalikan ke 0? karena PID - PID yang cukup kecil yaitu
+dalam rentang 0 sampai 300 adalah PID yang dikhususkan untuk kernel, maka ketika
+sebuah process melebihi nilai maksimal (pid_max) akan di-cycle PID nya menjadi
+300 bukan 0.
