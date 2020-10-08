@@ -112,3 +112,34 @@ sedang dalam status apa, contoh state dalam process adalah:
     resource di sistem tersebut yang mana ini hanya menjadi parasit karena
     proses lain jadi tidak bisa menggunakan resource yang sedang dipakai zombie
     process ini.
+
+## Zombie Process
+Adalah process yang sebenarnya sudah mati tetapi masih memakai resource di
+sistem tersebut yang mana resource tersebut jadi tidak bisa dipakai oleh process
+lainnya.
+### How to prevent
+Salah satu cara agar tidak ada zombie process adalah dengan menggunakan sinyal
+SIGCHLD yang mana sinyal tersebut akan dikirimkan ke parent process nya ketika
+child process tersebut sudah mati.
+### How to remove
+Karena zombie process ini statusnya sudah mati jadi tidak bisa dimatikan lagi
+maka yang harus dilakukan adalah membunuh parent nya agar parent nya membunuh
+dan membersihkan semua child process nya maka otomatis zombie process tersebut
+akan hilang.
+
+## Orphaned Process
+Adalah process yang masih berjalan walau parent nya sudah mati. Hal ini dapat
+dilakukan secara intensional atau unintensional.
+
+Pada cara yang intensional dapat dilakukan dengan cara menggunakan bantuan nohup
+atau sinyal SIGHUP yang nanti nya process tersebut akan langsung dijadikan anak
+angkat oleh process init.
+
+Pada cara yang unintensional, dapat terjadi ketika parent nya crash yang dimana
+tidak dapat menghapus atau clean-up child process nya dan ini juga langsung
+diadopsi oleh process init.
+
+## Daemon Process
+Adalah process yang tidak dikontrol secara langsung dengan user. Process ini
+berjalan sendiri ketika system menyala yang mana parent process nya adalah
+process init. Process ini mati ketika sistem nya juga mati atau shutdown.
