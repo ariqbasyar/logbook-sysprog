@@ -80,3 +80,35 @@ mencurigakan dan sebagainya, dan sysadmin cukup kill teletype dari user tersebut
 untuk menghindari hal - hal yang tidak diinginkan.
 
 ![ps-u](/images/ps-u.png)
+
+## Various types of process states
+Ternyata process memiliki state nya masing - masing yang mencerminkan saat itu
+sedang dalam status apa, contoh state dalam process adalah:
+
+* Uninterruptible Sleep
+
+    Pada state ini sebuah process memasuki saat dimana sedang munggu system call
+    selesai yang dimana process ini tidak dapat di kill
+
+* Running
+
+    Sebuah process yang sedang running atau berjalan menjalankan tugasnya
+
+* Waiting
+
+    Biasanya process yang memasuki state waiting atau menunggu ini sedang
+    menunggu suatu event untuk muncul, munggu process lainnya atau menunggu
+    resources.
+
+* Stopped
+
+    Sebuah process yang sudah selesai menjalankan seluruh tugasnya atau terdapat
+    error dalam mengeksekusi perintah yang diberikan, dapat diidentifikasi
+    apakah sukses atau error dari exit code nya.
+
+* Zombie
+
+    Sebuah process yang sebenarnya sudah mati/stopped tetapi masih menggunakan
+    resource di sistem tersebut yang mana ini hanya menjadi parasit karena
+    proses lain jadi tidak bisa menggunakan resource yang sedang dipakai zombie
+    process ini.
