@@ -62,3 +62,10 @@ harus melihat keuntungan dan kerugian dari penggunaan virtual memory ini.
     misal dari google chrome ke vscode.
     - Secondary storage jadi tidak bisa dipakai 100% karena sebagian harus
     menjadi tempat untuk virtual memory
+
+## Memory leaks
+Suatu failure ketika ingin melakukan alokasi memori, biasanya penyebabnya
+adalah:
+* Tidak melakukan dealokasi memory pada akhir program.
+* Alokasi memory melebihi batas heap.
+* Thread mati secara tiba - tiba tanpa cleanup.
