@@ -40,3 +40,25 @@ oke sekarang saya akan menjelaskannya dengan sepemahaman saya:
 
     Suatu prediksi pada pengaksesan address yang memiliki pattern yang linear
     maka dapat diprediksi address selanjutnya.
+
+Setelah membahas bagaimana penyimpanan ke physical memory, sekarang saya juga
+harus melihat keuntungan dan kerugian dari penggunaan virtual memory ini.
+
+## Advantage and disadvantage using **virtual memory**
+* Advantages
+    - Setiap process terisolasi dari process lainnya dalam hal memory atau
+    dengan kata lain suatu process tidak bisa mengotak atik memory milik process
+    lain.
+    - Tidak perlu memiliki RAM yang besar karena kernel dapat mengatur agar
+    menggunakan virtual memory di storage seperti ssd atau hdd.
+    - Cara untuk dua atau lebih process yang ingin saling sharing memory akan
+    lebih baik karena memiliki prinsip isolated jadi cukup berikan privilege
+    suatu process untuk mengakses virtual memory process lain.
+
+* Disadvantages
+    - Semakin besarnya ketergantungan process ke virtual memory maka akan
+    semakin lambat juga process tersebut
+    - Selain lambat di process itu, juga akan lambat jika kita berganti aplikasi
+    misal dari google chrome ke vscode.
+    - Secondary storage jadi tidak bisa dipakai 100% karena sebagian harus
+    menjadi tempat untuk virtual memory
