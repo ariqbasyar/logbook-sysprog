@@ -69,3 +69,29 @@ adalah:
 * Tidak melakukan dealokasi memory pada akhir program.
 * Alokasi memory melebihi batas heap.
 * Thread mati secara tiba - tiba tanpa cleanup.
+
+## setjmp && longjmp
+wih ternyata seru juga percobaan menggunakan setjmp dan longjmp
+* int setjmp(jmp_buf env);
+
+    adalah sebuah fungsi dimana fungsi itu akan menyimpan address sekarang ke
+    sebuah buffer yang nantinya akan digunakan untuk "loncat" kembali
+    menggunakan longjmp. Fungsi ini memiliki reutrn sebuah int dimana bila
+    pertama kali dipanggil akan return 0 dan return value selanjutnya akan
+    di set oleh value dari fungsi longjmp.
+
+* void longjmp(jmp_buf env, int val);
+
+    adalah sebuah fungsi yang berfungsi untuk melakukan 'loncat' ke dimana
+    address dari env berada (address ini di set ketika setjmp(env) dipanggil).
+    Fungsi ini memiliki parameter int val yaitu parameter yang akan menggantikan
+    nilai return value dari setjmp(env) ketika fungsi longjmp ini dipanggil.
+    Ada kasus dimana kalau longjmp mendapat parameter 0 maka dia akan
+    memberikan nilai 1.
+
+## abusing longjmp
+longjmp ini tidak bisa asal pakai, ada beberapa kondisi dia tidak dapat lagi
+digunakan, salah satu contohnya adalah ketika fungsi yang mengatur address env
+atau pemanggilan setjmp(env) ini sudah melakukan return maka longjmp tidak bisa
+melakukan "loncat" ke address dari setjmp itu dieksekusi, akan terjadi
+segmentation fault
