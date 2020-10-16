@@ -95,3 +95,6 @@ digunakan, salah satu contohnya adalah ketika fungsi yang mengatur address env
 atau pemanggilan setjmp(env) ini sudah melakukan return maka longjmp tidak bisa
 melakukan "loncat" ke address dari setjmp itu dieksekusi, akan terjadi
 segmentation fault
+
+## Bagaimana malloc, free, sbrk dan brk saling berkolaborasi
+#TODO
