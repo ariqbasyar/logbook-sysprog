@@ -6,7 +6,7 @@ bersifat secondary misalnya ssd atau hdd.
 Dikarenakan physical memory atau RAM itu sangat mahal dan juga aplikasi jaman
 sekarang semakin besar resource yang dibutuhkan dan juga banyak sekali
 background process yang berjalan yang juga pastinya membutuhkan resource, maka
-diperlukannya penggunaan physical memory untuk penyimpanan cadangan. Jadi kernel
+diperlukannya penggunaan virtual memory untuk penyimpanan cadangan. Jadi kernel
 akan menyimpan beberapa data di physical memory sebagai caching dengan algoritma
 dinamakan locality of reference.
 
