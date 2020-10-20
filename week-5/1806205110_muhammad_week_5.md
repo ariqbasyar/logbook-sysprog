@@ -92,6 +92,8 @@ wih ternyata seru juga percobaan menggunakan setjmp dan longjmp
 ## abusing longjmp
 longjmp ini tidak bisa asal pakai, ada beberapa kondisi dia tidak dapat lagi
 digunakan, salah satu contohnya adalah ketika fungsi yang mengatur address env
-atau pemanggilan setjmp(env) ini sudah melakukan return maka longjmp tidak bisa
-melakukan "loncat" ke address dari setjmp itu dieksekusi, akan terjadi
-segmentation fault
+atau pemanggilan setjmp(env) ini sudah melakukan return maka longjmp tidak boleh
+melakukan "loncatan" ke sana, ketika state suatu fungsi sudah returned atau
+address di stack tidak lagi menyimpan return address dari fungsi tersebut maka
+ketika ada longjmp yang loncat ke fungsi tersebut akan berakibat return address
+nya tidak lagi valid, dapat menyebabkan *segmentation fault*.
