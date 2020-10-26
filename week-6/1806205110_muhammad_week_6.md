@@ -27,7 +27,6 @@ INSTALL_DIR = /fac/matthews/bin
 
 prog: main.o routines.o
     $(CC) $(CFLAGS) $(OBJS) $(LIBS) -o
-prog
 
 $(OBJS): defs.h
 
