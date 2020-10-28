@@ -8,11 +8,11 @@ seperti javascript dan lainnya.
 ## Types of Shell
 * Bourne Shell
 
-    Biasa dikenal dengan sh, adalah shell yang pertama kali dipakai ketika
-    pengembangan linux, shell ini sudah sangat lama umurnya. keuntungan dari
-    memakai shell ini adalah pada simple nya, shell ini sangat simple dari mulai
-    prompt nya yang hanya `$ `. Keuntungan lainnya adalah pada shell ini ada di
-    berbagai unix system jadi sangat mudah beradaptasi ke server lain.
+    Biasa dikenal dengan sh, adalah shell yang sangat sering dijumpai di unix
+    system keuntungan dari memakai shell ini adalah pada simple nya, shell ini
+    sangat simple dari mulai prompt nya yang hanya `$ `. Keuntungan lainnya
+    adalah pada shell ini ada di berbagai unix system jadi sangat mudah
+    beradaptasi ke server lain.
 
     Kerugian nya adalah pada kompatibilitas dengan command lain. Shell ini
     kurang *compatible* dengan command lain bahkan seperti command `source` pun
