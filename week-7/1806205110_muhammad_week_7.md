@@ -19,6 +19,17 @@ seperti javascript dan lainnya.
     tidak bisa digunakan di sh.
 
 * Bourne-Again Shell
+
+    Atau biasa disebut bash, merupakan lanjutan dari korn shell dan memiliki
+    kemiripan dengan sh atau Bourne Shell. Untuk migrasi dari sesama keluarga
+    Bourne cukup mudah karena memiliki fitur - fitur atau command yang mirip.
+    Keuntungan nya adalah shell ini menjadi default di banyak system, jadi
+    penggunaan nya pun sudah sangat meluas dan dokumentasi nya pun cukup banyak
+    dari komunitasnya. Saya memakai shell ini dengan memasang framework
+    [ohmybash/oh-my-bash](https://github.com/ohmybash/oh-my-bash) yaitu sebuah
+    fancy bash dibuat oleh community dengan memberikan fitur seperti theme,
+    plugins dan lainnya.
+
 * TENEX C Shell
 * Korn Shell
 * Z Shell 
