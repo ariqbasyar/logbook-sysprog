@@ -62,8 +62,18 @@ seperti javascript dan lainnya.
     ini adalah tidak semua system memakai ZSH jadi untuk migrasi akan lebih
     susah dibanding memakai BASH atau SH.
 
-## Shell Variables
+## Shell Variable
+
+Seperti pada variable pada bahasa pemrograman, shell variable juga bisa dibuat
+misalnya `foo=bar` maka variable `foo` bernilai string `"bar"`, juga dapat
+dipanggil dengan menggunakan $ misal `echo $foo` maka outputnya adalah `bar`,
+juga dapat di delete dengan cara `foo=` atau menggunakan `unset foo`.
+
 ## Lifespan of Shell Variable
+
+Variable pada shell memiliki waktu terbatas sebelum variable itu hilang. Lamanya
+waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
+
 ## Special variables
 * \$1, \$2, \$3 ...
 * \$*
