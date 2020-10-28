@@ -87,6 +87,11 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     `arg2 arg3 arg1`.
 
 * \$*
+
+    Variable yang menyimpan secara lengkap string dari seluruh positional
+    argumen pada suatu program mencakup dari argumen pertama atau `$1` sampai
+    argumen ke N.
+
 * \$@
 * \$#
 * \$-
