@@ -85,8 +85,9 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     echo -e $3;
     echo -e $1;
     ```
-    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output:
-    ```
+    maka ketika dijalankan
+    ```shell
+    $ ./coba.sh arg1 arg2 arg3
     arg2
     arg3
     arg1
@@ -101,8 +102,9 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     #!/bin/bash
     echo $*;
     ```
-    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    ```
+    maka ketika dijalankan
+    ```shell
+    $ ./coba.sh arg1 arg2 arg3
     arg2 arg3 arg1
     ```
 
@@ -115,8 +117,9 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     #!/bin/bash
     echo $*;
     ```
-    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    ```
+    maka ketika dijalankan:
+    ```shell
+    $ ./coba.sh arg1 arg2 arg3
     arg2 arg3 arg1
     ```
     Secara representasi String nya, ini sama dengan \$*,
@@ -131,8 +134,9 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     #!/bin/bash
     echo $#;
     ```
-    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    ```
+    maka ketika dijalankan:
+    ```shell
+    $ ./coba.sh arg1 arg2 arg3
     3
     ```
 
@@ -141,10 +145,7 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     Atau variable *hypen*, yaitu variable yang menyimpan option pada shell yang
     sekrang sedang dipakai contoh output dari:
     ```bash
-    echo $-
-    ```
-    adalah
-    ```
+    $ echo $-
     himBH
     ```
     dimana:
@@ -162,12 +163,25 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     #!/bin/bash
     echo $$;
     ```
-    Ketika dijalankan `./coba.sh` maka contoh outputnya akan:
-    ```
+    Ketika dijalankan:
+    ```shell
+    $ ./coba.sh
     11429
     ```
 
 * \$_
+
+    Variable yang menyimpan argumen terakhir yang di pass ke suatu command,
+    Contoh saya menjalankan file `coba.sh`:
+    ```shell
+    $ ./coba.sh arg1 arg2 arg3
+    ```
+    Maka variable `$_` akan bernilai `arg3`:
+    ```shell
+    $ echo $_
+    arg3
+    ```
+
 * \$IFS
 * \$?
 * \$!
