@@ -183,6 +183,41 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     ```
 
 * \$IFS
+
+    Atau `Internal Field Separator`. Digunakan untuk word splitting misal pada
+    pemakaian for loop pada file `coba.sh`:
+    ```bash
+    #!/bin/bash
+    IFS=":";
+    foo="bar:baz raz qux;quux";
+    for word in $foo; do
+        echo $word;
+    done
+    ```
+    Ketika dijalankan:
+    ```shell
+    $ ./coba.sh
+    bar
+    baz raz qux;quux
+    ```
+
+    Pada percobaan yang lain:
+    ```bash
+    #!/bin/bash
+    IFS=" ";
+    foo="bar:baz raz qux;quux";
+    for word in $foo; do
+        echo $word;
+    done
+    ```
+    Ketika dijalankan:
+    ```shell
+    $ ./coba.sh
+    bar:baz
+    raz
+    qux;quux
+    ```
+
 * \$?
 * \$!
 * \$0
