@@ -140,7 +140,7 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
 
     Atau variable *hypen*, yaitu variable yang menyimpan option pada shell yang
     sekrang sedang dipakai contoh output dari:
-    ```
+    ```bash
     echo $-
     ```
     adalah
@@ -155,6 +155,18 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     - H adlaah `histexpand`
 
 * \$\$
+
+    Adalah variable yang menyimpan PID yang menjalankan shell tersebut. Contoh,
+    terdapat file script `coba.sh`:
+    ```bash
+    #!/bin/bash
+    echo $$;
+    ```
+    Ketika dijalankan `./coba.sh` maka contoh outputnya akan:
+    ```
+    11429
+    ```
+
 * \$_
 * \$IFS
 * \$?
