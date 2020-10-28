@@ -76,6 +76,16 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
 
 ## Special variables
 * \$1, \$2, \$3 ...
+
+    Adalah variable yang memiliki reference ke positional argumen ketika suatu
+    program dijalankan, misal terdapat script simple `coba.sh`:
+    ```bash
+    #!/bin/bash
+    echo $2 $3 $1;
+    ```
+    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
+    `arg2 arg3 arg1`.
+
 * \$*
 * \$@
 * \$#
