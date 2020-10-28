@@ -93,6 +93,11 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     argumen ke N.
 
 * \$@
+
+    Variable yang menyimpan secara lengkap array of string dari seluruh
+    posiitonal argument pada suatu program mencakup dari argumen pertama atau
+    `$1` sampai argumen ke N.
+
 * \$#
 * \$-
 * \$\$
