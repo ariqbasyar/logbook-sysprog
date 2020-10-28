@@ -1,4 +1,10 @@
 # Scripting
+
+Scripting adalah dimana melakukan programming yang bahasa nya masih perlu
+diinterpretasi oleh bahasa programming lain. Biasanya scripting dilakukan untuk
+mempermudah suatu urusan manusia, seperti scheduler, atau scripting di web
+seperti javascript dan lainnya.
+
 ## Types of Shell
 * Bourne Shell
 
