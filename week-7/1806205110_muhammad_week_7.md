@@ -31,6 +31,16 @@ seperti javascript dan lainnya.
     plugins dan lainnya.
 
 * TENEX C Shell
+
+    atau biasa disebut TCSH, adalah next generation dari C Shell dimana shell
+    ini support seluruh syntax dan built in dari C Shell dan menambahkan
+    powerful comamnd line editing yaitu filename dan user ID checking, auto
+    completions pada hostnames, variable names, aliases dan lainnya. kerugian
+    memakai shell ini adalah tidak semua distro atau linux system sudah
+    terinstall shell ini, dan katanya untuk memakai shell ini akan lebih baik
+    kalau sebelumnya sudah memakai C Shell agar lebih mudah memahami syntax dan
+    sebagainya.
+
 * Korn Shell
 * Z Shell 
 ## Shell Variables
