@@ -219,5 +219,32 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     ```
 
 * \$?
+
+    Adalah variable yang menyimpan exit code dari hasil menjalankan progra
+    sebelumnya, misal saya memiliki file `coba.sh`:
+    ```bash
+    #!/bin/bash
+    exit 10;
+    ```
+    Maka ketika dijalankan dan dilihat nilai exit code nya:
+    ```shell
+    $ ./coba.sh
+    $ echo $?
+    10
+    ```
+    Dengan kasus yang lain:
+    ```bash
+    #!/bin/bash
+    exit 0;
+    ```
+    Maka ketika dijalankan dan dilihat nilai exit code nya:
+    ```shell
+    $ ./coba.sh
+    $ echo $?
+    0
+    ```
+    Variable ini dapat sangat membantu dalam melihat exit code atau mendeteksi
+    kode error berapa yang terjadi di suatu program atau *process*.
+
 * \$!
 * \$0
