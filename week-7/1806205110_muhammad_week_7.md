@@ -138,7 +138,21 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
 
 * \$-
 
-    Atau variable *hypen*, yaitu variable 
+    Atau variable *hypen*, yaitu variable yang menyimpan option pada shell yang
+    sekrang sedang dipakai contoh output dari:
+    ```
+    echo $-
+    ```
+    adalah
+    ```
+    himBH
+    ```
+    dimana:
+    - h adalah `hashall`
+    - i adalah `interactive`
+    - m adalah `monitor`
+    - B adalah `Braceexpand`
+    - H adlaah `histexpand`
 
 * \$\$
 * \$_
