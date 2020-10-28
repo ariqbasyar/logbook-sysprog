@@ -247,4 +247,14 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     kode error berapa yang terjadi di suatu program atau *process*.
 
 * \$!
+
+    Adalah variable yang menyimpan `PID` suatu process yang terakhir di eksekusi
+    di background, misalnya saya melakukan eksekusi `sleep 10` di background:
+    ```shell
+    $ sleep 10 &
+    [1] 12700
+    $ echo $!
+    12700
+    ```
+
 * \$0
