@@ -75,6 +75,23 @@ Variable pada shell memiliki waktu terbatas sebelum variable itu hilang. Lamanya
 waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
 
 ## Special variables
+* \$0
+
+    Adalah variable yang menyimpan nama dari shell atau shell script yang
+    menjalankan dirinya, biasanya variable ini dipakai untuk me-refer ke nama
+    file apa program itu dijalankan:
+    ```bash
+    #!/bin/bash
+    echo $0;
+    ```
+    Dan ketika dijalankan:
+    ```shell
+    $ ./coba.sh
+    coba.sh
+    $ bash coba.sh
+    coba.sh
+    ```
+
 * \$1, \$2, \$3 ...
 
     Adalah variable yang memiliki reference ke positional argumen ketika suatu
@@ -256,5 +273,3 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     $ echo $!
     12700
     ```
-
-* \$0
