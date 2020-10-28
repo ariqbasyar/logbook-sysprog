@@ -51,6 +51,17 @@ seperti javascript dan lainnya.
     complex dan complicated seperti C Shell.
 
 * Z Shell 
+
+    atau ZSH. Yaitu shell yang terbilang sangat powerful. ketika suatu shell
+    tidak bisa melakukan sesuatu, maka ZSH kemungkinan besar dapat melakukannya.
+    ZSH ini juga memiliki komunitas yang cukup luas, para komunitas juga
+    mengembangkan versi fancy dari ZSH yaitu
+    [ohmyzsh/oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), disana plugin yang
+    diberikan jauh lebih banyak dibanding `oh-my-bash` tadi, ini membuktikan
+    bahwa komunitas nya juga lebih besar dibanding bash. Kerugian memakai shell
+    ini adalah tidak semua system memakai ZSH jadi untuk migrasi akan lebih
+    susah dibanding memakai BASH atau SH.
+
 ## Shell Variables
 ## Lifespan of Shell Variable
 ## Special variables
