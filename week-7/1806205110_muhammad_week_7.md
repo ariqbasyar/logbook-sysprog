@@ -102,7 +102,9 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     echo $*;
     ```
     maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    `arg2 arg3 arg1`.
+    ```
+    arg2 arg3 arg1
+    ```
 
 * \$@
 
@@ -114,7 +116,10 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     echo $*;
     ```
     maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    `arg2 arg3 arg1`. Secara representasi String nya, ini sama dengan \$*,
+    ```
+    arg2 arg3 arg1
+    ```
+    Secara representasi String nya, ini sama dengan \$*,
     tetapi akan berguna pada for loop.
 
 * \$#
@@ -127,9 +132,14 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     echo $#;
     ```
     maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    `3`.
+    ```
+    3
+    ```
 
 * \$-
+
+    Atau variable *hypen*, yaitu variable 
+
 * \$\$
 * \$_
 * \$IFS
