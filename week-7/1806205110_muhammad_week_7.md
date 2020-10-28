@@ -81,24 +81,54 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     program dijalankan, misal terdapat script simple `coba.sh`:
     ```bash
     #!/bin/bash
-    echo $2 $3 $1;
+    echo -e $2;
+    echo -e $3;
+    echo -e $1;
     ```
-    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
-    `arg2 arg3 arg1`.
+    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output:
+    ```
+    arg2
+    arg3
+    arg1
+    ```
 
 * \$*
 
     Variable yang menyimpan secara lengkap string dari seluruh positional
     argumen pada suatu program mencakup dari argumen pertama atau `$1` sampai
-    argumen ke N.
+    argumen ke N. Misal terdapat script simple `coba.sh`:
+    ```bash
+    #!/bin/bash
+    echo $*;
+    ```
+    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
+    `arg2 arg3 arg1`.
 
 * \$@
 
     Variable yang menyimpan secara lengkap array of string dari seluruh
     posiitonal argument pada suatu program mencakup dari argumen pertama atau
-    `$1` sampai argumen ke N.
+    `$1` sampai argumen ke N. Misal terdapat script simple `coba.sh`:
+    ```bash
+    #!/bin/bash
+    echo $*;
+    ```
+    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
+    `arg2 arg3 arg1`. Secara representasi String nya, ini sama dengan \$*,
+    tetapi akan berguna pada for loop.
 
 * \$#
+
+    Variable yang menyimpan banyaknya positional argumen atau parameter dalam
+    desimal dari variable positional argumen ke 1 `$1` sampai ke N. Misal
+    terdapat script simple `coba.sh`:
+    ```bash
+    #!/bin/bash
+    echo $#;
+    ```
+    maka ketika dijalankan `./coba.sh arg1 arg2 arg3` akan menghasilkan output
+    `3`.
+
 * \$-
 * \$\$
 * \$_
