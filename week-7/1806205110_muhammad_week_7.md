@@ -42,6 +42,14 @@ seperti javascript dan lainnya.
     sebagainya.
 
 * Korn Shell
+
+    atau KSH. Shell ini tidak membutuhkan waktu banyak untuk menguasainya,
+    tetapi shell ini dibuat dengan desain yang butuk dan dokumen yang juga buruk
+    atau sedikit. KSH dapat membuat correction dari typing error menjadi lebih
+    simple dan terdapat reuse command dari history jadi kita tidak perlu
+    mengetik kode yang sama berulang ulang. Tetapi syntax nya ternyata cukup
+    complex dan complicated seperti C Shell.
+
 * Z Shell 
 ## Shell Variables
 ## Lifespan of Shell Variable
