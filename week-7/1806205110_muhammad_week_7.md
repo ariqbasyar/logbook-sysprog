@@ -122,7 +122,7 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     maka ketika dijalankan
     ```shell
     $ ./coba.sh arg1 arg2 arg3
-    arg2 arg3 arg1
+    arg1 arg2 arg3
     ```
 
 * \$@
@@ -137,7 +137,7 @@ waktu suatu variable adalah sampai shell dimana dia dibuat itu mati.
     maka ketika dijalankan:
     ```shell
     $ ./coba.sh arg1 arg2 arg3
-    arg2 arg3 arg1
+    arg1 arg2 arg3
     ```
     Secara representasi String nya, ini sama dengan \$*,
     tetapi akan berguna pada for loop.
