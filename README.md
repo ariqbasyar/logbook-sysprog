@@ -7,3 +7,5 @@
 * [Week 6](/week-6/1806205110_muhammad_week_6.md) (Make, Stdio, and Buffering)
 * [Week 7](/week-7/1806205110_muhammad_week_7.md) (Scripting)
 * [Week 10](/week-10/1806205110_muhammad_week_10.md) (Scripting (II) & Signal)
+* [Week 11](/week-11/1806205110_muhammad_week_11.md) (Daemon & Background
+Process)
