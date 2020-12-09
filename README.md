@@ -11,3 +11,5 @@
 Process)
 * [Week 12](/week-12/1806205110_muhammad_week_12.md) (Boot Sequence and kernel
 Compilation)
+* [Week 13](/week-13/1806205110_muhammad_week_13.md) (Custom Device Driver &
+Kernel Module)
